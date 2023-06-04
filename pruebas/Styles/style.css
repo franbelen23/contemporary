@@ -1,0 +1,303 @@
+@font-face {
+  font-family: BoringSans;
+  src: url(../boringsans.ttf);
+}
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(120, 212, 177);
+}
+body .volver {
+  width: 50px;
+  height: 50px;
+  background-color: #E0DFD5;
+  border-radius: 100%;
+  position: fixed;
+  top: 90%;
+  left: 2.2%;
+  display: grid;
+  transition: 0.2s;
+}
+body .volver img {
+  width: 80%;
+  margin: auto;
+}
+body .volver:hover {
+  box-shadow: 1px 1px 5px rgb(124, 124, 124);
+}
+body .prueba {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+body .prueba header {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  background-color: white;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba header {
+    width: 100%;
+  }
+}
+body .prueba header .navMobile {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+body .prueba header .navMobile div {
+  display: none;
+}
+body .prueba header .navMobile ul {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  list-style: none;
+  gap: 30px;
+  background-color: transparent;
+}
+body .prueba header .navMobile ul a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding-bottom: 5px;
+  font-family: BoringSans;
+  text-transform: uppercase;
+}
+body .prueba header .navMobile #btn {
+  width: 20px;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba header .navMobile #btn {
+    display: block;
+    width: 50px;
+  }
+}
+body .prueba header nav {
+  width: 80%;
+  margin: 0 auto;
+  height: 70px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  body .prueba header nav {
+    width: 90%;
+  }
+}
+body .prueba header nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .prueba header nav div img {
+  width: 280px;
+  margin-left: -10px;
+}
+body .prueba header nav div h1 {
+  font-size: 30px;
+  font-family: BoringSans;
+  font-weight: 200;
+  letter-spacing: 4px;
+  margin: auto;
+}
+@media screen and (max-width: 450px) {
+  body .prueba header nav div h1 {
+    font-size: 20px;
+  }
+}
+body .prueba header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin-top: 15px;
+  background-color: transparent;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba header nav ul {
+    display: none;
+  }
+}
+body .prueba header nav ul a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  padding-bottom: 5px;
+  font-family: BoringSans;
+  text-transform: uppercase;
+  transition: all 0.35s;
+}
+body .prueba header nav ul a:hover {
+  color: #d3ba83;
+}
+body .prueba header nav #btn {
+  width: 20px;
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba header nav #btn {
+    display: block;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  body .prueba header nav #btn {
+    width: 35px;
+  }
+}
+body .prueba header .hola {
+  width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 450px) {
+  body .prueba header .hola {
+    width: 90%;
+  }
+}
+body .prueba .interiors {
+  width: 1200px;
+  height: auto;
+  background-color: white;
+  margin: auto;
+}
+body .prueba .interiors h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-family: BoringSans;
+}
+body .prueba .interiors div {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+body .prueba .interiors div img {
+  margin-top: 30px;
+  width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba .interiors {
+    width: 100%;
+  }
+}
+body .prueba .interiors2 {
+  width: 1200px;
+  height: auto;
+  background-color: #ffffff;
+  margin: auto;
+}
+body .prueba .interiors2 h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-family: BoringSans;
+}
+body .prueba .interiors2 div {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+@media screen and (max-width: 450px) {
+  body .prueba .interiors2 div {
+    width: 90%;
+  }
+}
+body .prueba .interiors2 div img {
+  margin-top: 30px;
+  width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba .interiors2 {
+    width: 100%;
+  }
+}
+body .prueba .interiors3 {
+  width: 1200px;
+  height: auto;
+  background-color: #ffffff;
+  margin: auto;
+}
+body .prueba .interiors3 h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-family: BoringSans;
+}
+body .prueba .interiors3 div {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+@media screen and (max-width: 450px) {
+  body .prueba .interiors3 div {
+    width: 90%;
+  }
+}
+body .prueba .interiors3 div img {
+  margin-top: 30px;
+  width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba .interiors3 {
+    width: 100%;
+  }
+}
+body .prueba .interiors4 {
+  width: 1200px;
+  height: 200px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .prueba .interiors4 h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-family: BoringSans;
+}
+@media screen and (max-width: 450px) {
+  body .prueba .interiors4 {
+    height: 150px;
+  }
+}
+body .prueba .interiors4 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+body .prueba .interiors4 div img {
+  width: 60px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+@media screen and (max-width: 450px) {
+  body .prueba .interiors4 div img {
+    width: 45px;
+  }
+}
+body .prueba .interiors4 div img:hover {
+  width: 65px;
+}
+@media screen and (max-width: 450px) {
+  body .prueba .interiors4 div img:hover {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body .prueba .interiors4 {
+    width: 100%;
+  }
+}
+body .prueba .interiors4 p {
+  text-align: center;
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */

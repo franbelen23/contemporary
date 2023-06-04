@@ -1,0 +1,14 @@
+@keyframes changeBackground{
+    0% { background-image: url("/Franbe-Pag-main/fotos/STYLING/DIMM/comedor.png"); }
+    25% { background-image: url('../imgAct/contemp1.jpg'); }
+    50% { background-image: url('../imgAct/contemp2.jpg'); }
+    75% { background-image: url('../imgAct/contemp3.jpg'); }
+    100% { background-image: url('../imgAct/contemp.jpg'); } 
+}
+
+.animacion{
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    animation: changeBackground 20s infinite;
+}

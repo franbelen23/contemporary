@@ -1,0 +1,511 @@
+@font-face {
+  font-family: letra;
+  src: url(../pruebas/boringsans.ttf);
+}
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(120, 212, 177);
+}
+body .volver {
+  width: 50px;
+  height: 50px;
+  background-color: #e0dfd5;
+  border-radius: 100%;
+  position: fixed;
+  top: 93%;
+  left: 1%;
+  display: grid;
+  transition: 0.2s;
+}
+body .volver img {
+  width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 450px) {
+  body .volver {
+    top: 92.5%;
+    left: 2%;
+    width: 30px;
+    height: 30px;
+  }
+}
+body .volver:hover {
+  box-shadow: 1px 1px 5px rgb(124, 124, 124);
+}
+body .prueba {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+body .prueba header {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  background-color: white;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba header {
+    width: 100%;
+  }
+}
+body .prueba header .navMobile {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+body .prueba header .navMobile div {
+  display: none;
+}
+body .prueba header .navMobile ul {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  list-style: none;
+  gap: 30px;
+  background-color: transparent;
+}
+body .prueba header .navMobile ul a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding-bottom: 5px;
+  font-family: letra;
+  text-transform: uppercase;
+}
+body .prueba header .navMobile ul a:hover {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+body .prueba header .navMobile #btn {
+  width: 20px;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba header .navMobile #btn {
+    display: block;
+    width: 50px;
+  }
+}
+body .prueba header .navMobile #btn:hover {
+  cursor: pointer;
+}
+body .prueba header nav {
+  width: 80%;
+  margin: 0 auto;
+  height: 70px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  body .prueba header nav {
+    width: 90%;
+  }
+}
+body .prueba header nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .prueba header nav div h1 {
+  font-size: 30px;
+  font-family: letra;
+  font-weight: 0;
+  letter-spacing: 4px;
+  margin: auto;
+}
+@media screen and (max-width: 450px) {
+  body .prueba header nav div h1 {
+    font-size: 20px;
+  }
+}
+body .prueba header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin-top: 15px;
+  background-color: transparent;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba header nav ul {
+    display: none;
+  }
+}
+body .prueba header nav ul a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  padding-bottom: 5px;
+  font-family: letra;
+  text-transform: uppercase;
+  transition: 0.25s;
+}
+body .prueba header nav ul a:hover {
+  color: #dbbe7f;
+}
+body .prueba header nav #btn {
+  width: 20px;
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba header nav #btn {
+    display: block;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  body .prueba header nav #btn {
+    width: 35px;
+  }
+}
+body .prueba header nav #btn:hover {
+  cursor: pointer;
+}
+body .prueba header .hola {
+  width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 450px) {
+  body .prueba header .hola {
+    width: 90%;
+  }
+}
+body .prueba .interiors {
+  width: 1200px;
+  height: auto;
+  background-color: white;
+  margin: auto;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba .interiors {
+    width: 100%;
+  }
+}
+body .prueba .interiors h2 {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: letra;
+}
+body .prueba .interiors div {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+  display: grid;
+  gap: 20px;
+}
+@media screen and (max-width: 500px) {
+  body .prueba .interiors div {
+    width: 100%;
+  }
+}
+body .prueba .interiors div .container-i {
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba .interiors div .container-i {
+    flex-direction: column;
+    height: auto;
+  }
+}
+body .prueba .interiors div .container-i .card1 {
+  width: 400px;
+  height: 350px;
+  background-color: rgb(206, 95, 95);
+  box-shadow: 1px 1px 10px rgb(131, 131, 131);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+@media screen and (max-width: 500px) {
+  body .prueba .interiors div .container-i .card1 {
+    width: 90%;
+  }
+}
+body .prueba .interiors div .container-i .card1 .card-1 {
+  width: 100%;
+  height: 80%;
+  background-image: url(Franbe-Pag-main/fotos/INTERIORS/BOTANE/IMG_9912.JPG);
+  background-size: cover;
+  margin: 0 auto 0 0;
+  padding: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body .prueba .interiors div .container-i .card1 .card-text {
+  width: 100%;
+  height: 20%;
+  margin-top: -20px;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  bottom: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body .prueba .interiors div .container-i .card1 .card-text h4 {
+  margin: auto;
+}
+body .prueba .interiors div .container-i .card1:hover {
+  box-shadow: 2px 2px 20px rgb(131, 131, 131);
+}
+body .prueba .interiors div .container-i .card2 {
+  width: 400px;
+  height: 350px;
+  background-color: rgb(207, 230, 230);
+  box-shadow: 1px 1px 10px rgb(131, 131, 131);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+@media screen and (max-width: 500px) {
+  body .prueba .interiors div .container-i .card2 {
+    width: 90%;
+  }
+}
+body .prueba .interiors div .container-i .card2 .card-1 {
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-image: url(andresfotosweb/INTERIORS/FE/IMG_8490\ \(1\).jpg);
+  margin: 0 auto 0 0;
+  padding: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body .prueba .interiors div .container-i .card2 .card-text {
+  width: 100%;
+  height: 20%;
+  margin-top: -20px;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  bottom: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body .prueba .interiors div .container-i .card2 .card-text h4 {
+  margin: auto;
+}
+body .prueba .interiors div .container-i .card2:hover {
+  box-shadow: 2px 2px 20px rgb(131, 131, 131);
+}
+body .prueba .interiors div .container-i2 {
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba .interiors div .container-i2 {
+    flex-direction: column;
+    height: auto;
+  }
+}
+body .prueba .interiors div .container-i2 .card1 {
+  width: 400px;
+  height: 350px;
+  background-color: rgb(207, 230, 230);
+  box-shadow: 1px 1px 10px rgb(131, 131, 131);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+@media screen and (max-width: 500px) {
+  body .prueba .interiors div .container-i2 .card1 {
+    width: 90%;
+  }
+}
+body .prueba .interiors div .container-i2 .card1 .card-1 {
+  width: 100%;
+  height: 80%;
+  background-image: url(/assets/INTERIORS/DIMMgorriti/IMG_0510.JPG);
+  background-size: cover;
+  margin: 0 auto 0 0;
+  padding: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body .prueba .interiors div .container-i2 .card1 .card-text {
+  width: 100%;
+  height: 20%;
+  margin-top: -20px;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  bottom: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body .prueba .interiors div .container-i2 .card1 .card-text h4 {
+  margin: auto;
+}
+body .prueba .interiors div .container-i2 .card1:hover {
+  box-shadow: 2px 2px 20px rgb(131, 131, 131);
+}
+body .prueba .interiors div .container-i2 .card2 {
+  width: 400px;
+  height: 350px;
+  background-color: rgb(207, 230, 230);
+  box-shadow: 1px 1px 10px rgb(131, 131, 131);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+@media screen and (max-width: 500px) {
+  body .prueba .interiors div .container-i2 .card2 {
+    width: 90%;
+  }
+}
+body .prueba .interiors div .container-i2 .card2 .card-1 {
+  width: 100%;
+  height: 80%;
+  background-image: url(assets/INTERIORS/CABRERAmonoambiente/WhatsApp\ Image\ 2023-05-22\ at\ 23.58.55\ \(1\).jpeg);
+  background-size: cover;
+  margin: 0 auto 0 0;
+  padding: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body .prueba .interiors div .container-i2 .card2 .card-text {
+  width: 100%;
+  height: 20%;
+  margin-top: -20px;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  bottom: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body .prueba .interiors div .container-i2 .card2 .card-text h4 {
+  margin: auto;
+}
+body .prueba .interiors div .container-i2 .card1:hover {
+  box-shadow: 2px 2px 20px rgb(131, 131, 131);
+}
+body .prueba .setdesing {
+  width: 1200px;
+  height: auto;
+  background-color: #ffffff;
+  margin: 20px auto;
+}
+body .prueba .setdesing h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-family: letra;
+}
+body .prueba .setdesing div {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+@media screen and (max-width: 450px) {
+  body .prueba .setdesing div {
+    width: 90%;
+  }
+}
+body .prueba .setdesing div img {
+  margin-top: 30px;
+  width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  body .prueba .setdesing {
+    width: 100%;
+  }
+}
+body .prueba .styling {
+  width: 960px;
+  height: 960px;
+  margin: auto;
+}
+body .prueba .styling h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-family: letra;
+}
+@media screen and (max-width: 450px) {
+  body .prueba {
+    width: 90%;
+  }
+}
+body .prueba img {
+  margin-top: 30px;
+  width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  body {
+    width: 100%;
+  }
+}
+
+.contact {
+  width: 1200px;
+  height: 200px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-family: letra;
+}
+@media screen and (max-width: 450px) {
+  .contact {
+    height: 200px;
+  }
+}
+.contact div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.contact div img {
+  width: 60px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.contact div img:hover {
+  width: 65px;
+}
+@media screen and (max-width: 1100px) {
+  .contact {
+    width: 100%;
+  }
+}
+.contact p {
+  text-align: center;
+  margin-top: 10px;
+}
+@media screen and (max-width: 450px) {
+  .contact p {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
