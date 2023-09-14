@@ -1,0 +1,1485 @@
+// IMPORTS
+@import '../mediaq/mediaq.scss';
+
+@font-face {
+    font-family: pepe;
+    src: url(/boring-sans-a-trial.light.ttf);
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+
+    .volver {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 2px solid black;
+        position: fixed;
+        left: 1vw;
+        bottom: 2vh;
+        transition: 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        opacity: 0.5;
+
+        @include tablet {
+            width: 35px;
+            height: 35px;
+        }
+
+        svg {
+            width: 70%;
+        }
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+
+    // MAIN
+    main {
+        width: 100%;
+        height: auto;
+
+        @include tablet {
+            height: auto;
+        }
+
+        // NAV NORMAL
+        nav {
+            width: 1000px;
+            height: 70px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include tablet {
+                width: 95%;
+            }
+
+            .nav-1 {
+                h1 {
+                    text-transform: uppercase;
+                    font-family: pepe;
+                    font-size: 30px;
+                    margin-top: 10px;
+                    letter-spacing: 4px;
+                }
+            }
+
+            .nav-2 {
+                ul {
+                    display: flex;
+                    margin-top: 20px;
+                    gap: 25px;
+                    list-style: none;
+
+                    li a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: black;
+                        font-family: pepe;
+                        font-size: 18px;
+                        transition: 0.2s;
+
+                        &:hover {
+                            color: #dbbe7f;
+                        }
+                    }
+                }
+
+                @include tablet {
+                    display: none;
+                }
+            }
+
+            .navButton {
+                display: none;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                width: 35px;
+                height: 28px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .line-1 {
+                    width: 100%;
+                    height: 4px;
+                    background-color: black;
+                }
+
+                .line-2 {
+                    width: 100%;
+                    height: 4px;
+                    background-color: black;
+                }
+
+                .line-3 {
+                    width: 100%;
+                    height: 4px;
+                    background-color: black;
+                }
+
+                @include tablet {
+                    display: flex;
+                }
+            }
+        }
+
+        // NAV MOBILE
+        .navMobile {
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            @include tablet {
+                width: 95%;
+            }
+
+            .nav-1 {
+                display: none;
+
+                h1 {
+                    text-transform: uppercase;
+                    font-family: pepe;
+                    font-size: 30px;
+                    margin-top: 10px;
+                    letter-spacing: 4px;
+                }
+            }
+
+            .nav-2 {
+                display: block;
+                margin: auto;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+                    gap: 25px;
+
+                    list-style: none li a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: black;
+                        font-family: pepe;
+                        font-size: 18px;
+                        transition: 0.2s;
+                    }
+
+                    li a:hover {
+                        color: #dbbe7f;
+                    }
+                }
+            }
+
+            .navButton {
+                position: absolute;
+                right: 4.3vw;
+                top: 2.1vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 35px;
+                height: 28px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .line-1 {
+                    width: 100%;
+                    height: 4px;
+                    background-color: rgb(37, 37, 37);
+                    position: absolute;
+                    rotate: -40deg;
+                }
+
+                .line-2 {
+                    display: none;
+                }
+
+                .line-3 {
+                    width: 100%;
+                    height: 4px;
+                    rotate: 40deg;
+                    position: absolute;
+                    background-color: rgb(37, 37, 37);
+                }
+            }
+        }
+
+        .carrusel {
+            width: 1000px;
+            margin: auto;
+            height: calc(100vh - 70px);
+
+            @include tablet {
+                width: 95%;
+                height: auto;
+            }
+
+            .slide .pepeArgento {
+                height: calc(100vh - 70px);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                @include tablet {
+                    width: 100%;
+                    height: 700px;
+                }
+
+                @include carrusel2 {
+                    width: 100%;
+                    height: 430px;
+                }
+
+                @include mobile {
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+        }
+    }
+
+    // INTERIORS
+    .interiors {
+        width: 1000px;
+        height: auto;
+        margin: auto;
+
+        @include tablet {
+            width: 95%;
+        }
+
+        h2 {
+            font-family: pepe;
+            text-align: center;
+            padding: 30px;
+            letter-spacing: 2px;
+        }
+
+        .card-1 {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+            opacity: 0;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column-reverse;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+
+            .card-1-img-1 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/BOTANE/botane4.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-1-img-2 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/BOTANE/botane6.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-1-desc {
+                width: 325px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                @include tablet {
+                    width: 330px;
+                }
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                button {
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(255, 255, 255);
+                    align-items: center;
+                    border: 1px solid rgb(165, 165, 165);
+                    color: black;
+                    gap: 4px;
+                    transition: 0.1s;
+
+                    &:hover {
+                        color: #dbbe7f;
+                        border: 1px solid #dbbe7f;
+                    }
+                }
+            }
+        }
+
+        .card-2 {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                margin-top: 10px;
+            }
+
+            .card-2-img-1 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/MONOAMBIENTE/mono5.png);
+                background-size: cover;
+                background-position: bottom;
+                background-repeat: no-repeat;
+            }
+
+            .card-2-img-2 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/MONOAMBIENTE/mono6.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-2-desc {
+                width: 325px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                @include tablet {
+                    width: 330px;
+                }
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                button {
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(255, 255, 255);
+                    align-items: center;
+                    border: 1px solid rgb(165, 165, 165);
+                    gap: 4px;
+                    transition: 0.1s;
+                    color: black;
+
+                    &:hover {
+                        color: #dbbe7f;
+                        border: 1px solid #dbbe7f;
+                    }
+                }
+            }
+        }
+
+        .card-3 {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column-reverse;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                margin-top: 10px;
+            }
+
+            .card-3-img-1 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/DARWIM/darwin3.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-3-img-2 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/DARWIM/darwin17.png);
+                background-size: cover;
+                background-position: left;
+                background-repeat: no-repeat;
+            }
+
+            .card-3-desc {
+                width: 325px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                @include tablet {
+                    width: 330px;
+                }
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                button {
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(255, 255, 255);
+                    align-items: center;
+                    border: 1px solid rgb(165, 165, 165);
+                    gap: 4px;
+                    transition: 0.1s;
+                    color: black;
+
+                    &:hover {
+                        color: #dbbe7f;
+                        border: 1px solid #dbbe7f;
+                    }
+                }
+            }
+        }
+
+        .card-4 {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                margin-top: 10px;
+            }
+
+            .card-4-img-1 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/GORRITI/gorriti13.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-4-img-2 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/GORRITI/gorriti8.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-4-desc {
+                width: 325px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                @include tablet {
+                    width: 330px;
+                }
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                button {
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(255, 255, 255);
+                    align-items: center;
+                    border: 1px solid rgb(165, 165, 165);
+                    gap: 4px;
+                    transition: 0.1s;
+                    color: black;
+
+                    &:hover {
+                        color: #dbbe7f;
+                        border: 1px solid #dbbe7f;
+                    }
+                }
+            }
+        }
+
+        .card-5 {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column-reverse;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                margin-top: 10px;
+            }
+
+            .card-5-img-1 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/FE/fe15.png);
+                background-size: cover;
+                background-position: top;
+                background-repeat: no-repeat;
+            }
+
+            .card-5-img-2 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/FE/fe4.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-5-desc {
+                width: 325px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                @include tablet {
+                    width: 330px;
+                }
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                button {
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(255, 255, 255);
+                    align-items: center;
+                    border: 1px solid rgb(165, 165, 165);
+                    gap: 4px;
+                    transition: 0.1s;
+                    color: black;
+
+                    &:hover {
+                        color: #dbbe7f;
+                        border: 1px solid #dbbe7f;
+                    }
+                }
+            }
+        }
+
+        .card-6 {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                margin-top: 10px;
+            }
+
+            .card-6-img-1 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/TERRAZA/terra2.png);
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+
+            .card-6-img-2 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/TERRAZA/terra10.png);
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+
+            .card-6-desc {
+                width: 325px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                @include tablet {
+                    width: 330px;
+                }
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                button {
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(255, 255, 255);
+                    align-items: center;
+                    border: 1px solid rgb(165, 165, 165);
+                    gap: 4px;
+                    transition: 0.1s;
+                    color: black;
+
+                    &:hover {
+                        color: #dbbe7f;
+                        border: 1px solid #dbbe7f;
+                    }
+                }
+            }
+        }
+
+        .card-7 {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column-reverse;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                margin-top: 10px;
+            }
+
+            .card-7-img-1 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/LEBRETON/1.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-7-img-2 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/LEBRETON/2.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-7-desc {
+                width: 325px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                @include tablet {
+                    width: 330px;
+                }
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                button {
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(255, 255, 255);
+                    align-items: center;
+                    border: 1px solid rgb(165, 165, 165);
+                    gap: 4px;
+                    transition: 0.1s;
+                    color: black;
+
+                    &:hover {
+                        color: #dbbe7f;
+                        border: 1px solid #dbbe7f;
+                    }
+                }
+            }
+        }
+
+        .card-8 {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                margin-top: 10px;
+            }
+
+            .card-8-img-1 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/LACROZEchill/opti1.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-8-img-2 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/LACROZEchill/opti2.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-8-desc {
+                width: 325px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                @include tablet {
+                    width: 330px;
+                }
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                button {
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(255, 255, 255);
+                    align-items: center;
+                    border: 1px solid rgb(165, 165, 165);
+                    gap: 4px;
+                    transition: 0.1s;
+                    color: black;
+
+                    &:hover {
+                        color: #dbbe7f;
+                        border: 1px solid #dbbe7f;
+                    }
+                }
+            }
+        }
+
+        .card-9 {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column-reverse;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                margin-top: 10px;
+            }
+
+            .card-9-img-1 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/BERUTI/beruti1.jpeg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .card-9-img-2 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/BERUTI/beruti2.jpeg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .card-9-desc {
+                width: 325px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                @include tablet {
+                    width: 330px;
+                }
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                button {
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(255, 255, 255);
+                    align-items: center;
+                    border: 1px solid rgb(165, 165, 165);
+                    gap: 4px;
+                    transition: 0.1s;
+                    color: black;
+
+                    &:hover {
+                        color: #dbbe7f;
+                        border: 1px solid #dbbe7f;
+                    }
+                }
+            }
+        }
+
+        .card-10 {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                margin-top: 10px;
+            }
+
+            .card-10-img-1 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/RIVADAVIAvivienda/rivadavia1.jpeg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .card-10-img-2 {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/INTERIORS/RIVADAVIAvivienda/rivadavia3.jpeg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .card-10-desc {
+                width: 325px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                @include tablet {
+                    width: 330px;
+                }
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                button {
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(255, 255, 255);
+                    align-items: center;
+                    border: 1px solid rgb(165, 165, 165);
+                    gap: 4px;
+                    transition: 0.1s;
+                    color: black;
+
+                    &:hover {
+                        color: #dbbe7f;
+                        border: 1px solid #dbbe7f;
+                    }
+                }
+            }
+        }
+
+        .process {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+
+            h2 {
+                font-family: pepe;
+                text-align: start;
+                text-transform: uppercase;
+                padding: 5px;
+                padding-bottom: 10px;
+                letter-spacing: 2px;
+
+                @include tablet {
+                    text-align: center;
+                }
+            }
+
+            .process-cards {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                @include tablet {
+                    flex-direction: column;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    height: auto;
+                    margin-top: 10px;
+                }
+
+                .process-card {
+                    width: 440px;
+                    height: 300px;
+                    border: 1px solid rgb(201, 201, 201);
+
+                    @include mobile {
+                        width: 330px;
+                        height: 250px;
+                    }
+
+                    .img {
+                        width: 100%;
+                        height: 60%;
+                        background-image: url(../assets2/INTERIORS/MARITTIMA/566.png);
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    .img-2 {
+                        width: 100%;
+                        height: 60%;
+                        background-color: rgb(203, 204, 204);
+                        background-image: url(../assets2/INTERIORS/FRAGA/yhhh.png);
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    .rest {
+                        width: 100%;
+                        height: 40%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        h3 {
+                            font-family: pepe;
+                            text-transform: uppercase;
+                            padding: 5px;
+                        }
+
+                        button {
+                            width: 200px;
+                            height: 50px;
+                            display: flex;
+                            justify-content: center;
+                            background-color: rgb(255, 255, 255);
+                            align-items: center;
+                            border: 1px solid rgb(165, 165, 165);
+                            gap: 4px;
+                            transition: 0.1s;
+                            color: black;
+                            cursor: default;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SET-DESING
+    .set-desing {
+        width: 1000px;
+        height: auto;
+        margin: 35px auto;
+        padding: 0;
+
+        @include tablet {
+            width: 95%;
+        }
+
+        h2 {
+            font-family: pepe;
+            text-align: center;
+            padding-bottom: 10px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            @include mobile {
+                padding-bottom: 30px;
+            }
+        }
+
+        .set-1 {
+            width: 100%;
+            height: 350px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 1;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+
+            .set-1-img-1 {
+                width: 325px;
+                height: 280px;
+                border: 1px solid rgb(201, 201, 201);
+                background-image: url(../assets2/SET/PLAYLIST/dillon1.png);
+                background-position: center;
+                background-size: cover;
+
+                @include mobile {
+                    width: 320px;
+                    height: 270px;
+                }
+            }
+
+            .set-1-img-2 {
+                width: 325px;
+                height: 280px;
+                border: 1px solid rgb(201, 201, 201);
+                background-image: url(../assets2/SET/PLAYLIST/dillon2.png);
+                background-position: center;
+                background-size: cover;
+
+                @include mobile {
+                    width: 320px;
+                    height: 270px;
+                }
+            }
+
+            .set-1-carrousel {
+                width: 325px;
+                height: 280px;
+                background-image: url(../assets2/SET/STAND/stand.png);
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                }
+
+                .slide img {
+                    width: 325px;
+                    height: 280px;
+
+                    @include mobile {
+                        width: 320px;
+                        height: 270px;
+                    }
+                }
+            }
+        }
+    }
+
+    // STYLING 
+    .styling {
+        width: 1000px;
+        height: auto;
+        margin: -25px auto;
+
+        @include tablet {
+            width: 95%;
+        }
+
+        h2 {
+            font-family: pepe;
+            text-align: center;
+            padding-bottom: 0px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            @include mobile {
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
+        }
+
+        .style-1 {
+            width: 100%;
+            height: 350px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 1;
+            transition: opacity 3s ease;
+
+            @include tablet {
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+
+            .style-1-img-1 {
+                width: 325px;
+                height: 280px;
+                border: 1px solid rgb(201, 201, 201);
+                background-image: url(../assets2/STYLING/FELPA/felpa.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                @include mobile {
+                    width: 320px;
+                    height: 270px;
+                }
+            }
+
+            .style-1-img-2 {
+                width: 325px;
+                height: 280px;
+                border: 1px solid rgb(201, 201, 201);
+
+                @include mobile {
+                    width: 320px;
+                    height: 270px;
+                }
+
+                .slide img {
+                    width: 325px;
+                    height: 280px;
+                }
+            }
+
+            .style-1-carrousel {
+                width: 325px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid rgb(201, 201, 201);
+
+                h3 {
+                    font-family: pepe;
+                    color: rgb(43, 42, 42);
+                }
+
+                p {
+                    width: 90%;
+                    color: rgb(32, 32, 32);
+                    font-family: pepe;
+                }
+
+                .slide img {
+                    width: 325px;
+                    height: 280px;
+                }
+            }
+        }
+    }
+
+    // CONTACT 
+    .contact {
+        width: 1000px;
+        height: 230px;
+        margin: auto;
+
+        @include tablet {
+            width: 95%;
+        }
+
+        @include mobile {
+            margin: 35px auto;
+        }
+
+        h2 {
+            font-family: pepe;
+            text-align: center;
+            padding-top: 30px;
+            letter-spacing: 2px;
+        }
+
+        .contact-icons {
+            width: 250px;
+            height: 70px;
+            margin: 50px auto;
+            border: 1px solid rgb(99, 99, 99);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            img {
+                width: 60px;
+                transition: 0.3s;
+                scale: 1.1;
+
+                &:hover {
+                    scale: 0.9;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+
+        p {
+            text-align: center;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
