@@ -6,7 +6,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
 }
 html .volver,
 body .volver {
@@ -307,7 +306,7 @@ html .interiors .card-1 .card-1-img-1,
 body .interiors .card-1 .card-1-img-1 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/BOTANE/botane4.png);
+  background-image: url(../assets2/INTERIORS/BOTANE/botane4.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -316,7 +315,7 @@ html .interiors .card-1 .card-1-img-2,
 body .interiors .card-1 .card-1-img-2 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/BOTANE/botane6.png);
+  background-image: url(../assets2/INTERIORS/BOTANE/botane6.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -397,7 +396,7 @@ html .interiors .card-2 .card-2-img-1,
 body .interiors .card-2 .card-2-img-1 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/MONOAMBIENTE/mono5.png);
+  background-image: url(../assets2/INTERIORS/MONOAMBIENTE/mono5.webp);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -406,7 +405,7 @@ html .interiors .card-2 .card-2-img-2,
 body .interiors .card-2 .card-2-img-2 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/MONOAMBIENTE/mono6.png);
+  background-image: url(../assets2/INTERIORS/MONOAMBIENTE/mono6.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -487,7 +486,7 @@ html .interiors .card-3 .card-3-img-1,
 body .interiors .card-3 .card-3-img-1 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/DARWIM/darwin3.png);
+  background-image: url(../assets2/INTERIORS/DARWIM/darwin3.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -496,7 +495,7 @@ html .interiors .card-3 .card-3-img-2,
 body .interiors .card-3 .card-3-img-2 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/DARWIM/darwin17.png);
+  background-image: url(../assets2/INTERIORS/DARWIM/darwin17.webp);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -577,7 +576,7 @@ html .interiors .card-4 .card-4-img-1,
 body .interiors .card-4 .card-4-img-1 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/GORRITI/gorriti13.png);
+  background-image: url(../assets2/INTERIORS/GORRITI/gorriti13.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -586,7 +585,7 @@ html .interiors .card-4 .card-4-img-2,
 body .interiors .card-4 .card-4-img-2 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/GORRITI/gorriti8.png);
+  background-image: url(../assets2/INTERIORS/GORRITI/gorriti8.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -667,7 +666,7 @@ html .interiors .card-5 .card-5-img-1,
 body .interiors .card-5 .card-5-img-1 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/FE/fe15.png);
+  background-image: url(../assets2/INTERIORS/FE/fe15.webp);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -676,7 +675,7 @@ html .interiors .card-5 .card-5-img-2,
 body .interiors .card-5 .card-5-img-2 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/FE/fe4.png);
+  background-image: url(../assets2/INTERIORS/FE/fe4.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -757,7 +756,7 @@ html .interiors .card-6 .card-6-img-1,
 body .interiors .card-6 .card-6-img-1 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/TERRAZA/terra2.png);
+  background-image: url(../assets2/INTERIORS/TERRAZA/terra2.webp);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -766,7 +765,7 @@ html .interiors .card-6 .card-6-img-2,
 body .interiors .card-6 .card-6-img-2 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/TERRAZA/terra10.png);
+  background-image: url(../assets2/INTERIORS/TERRAZA/terra10.webp);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -847,7 +846,7 @@ html .interiors .card-7 .card-7-img-1,
 body .interiors .card-7 .card-7-img-1 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/LEBRETON/1.png);
+  background-image: url(../assets2/INTERIORS/LEBRETON/1.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -856,7 +855,7 @@ html .interiors .card-7 .card-7-img-2,
 body .interiors .card-7 .card-7-img-2 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/LEBRETON/2.png);
+  background-image: url(../assets2/INTERIORS/LEBRETON/2.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -937,7 +936,7 @@ html .interiors .card-8 .card-8-img-1,
 body .interiors .card-8 .card-8-img-1 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/LACROZEchill/opti1.png);
+  background-image: url(../assets2/INTERIORS/LACROZEchill/opti1.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -946,7 +945,7 @@ html .interiors .card-8 .card-8-img-2,
 body .interiors .card-8 .card-8-img-2 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/LACROZEchill/opti2.png);
+  background-image: url(../assets2/INTERIORS/LACROZEchill/opti2.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1027,7 +1026,7 @@ html .interiors .card-9 .card-9-img-1,
 body .interiors .card-9 .card-9-img-1 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/BERUTI/beruti1.jpeg);
+  background-image: url(../assets2/INTERIORS/BERUTI/beruti1.webp);
   background-position: center;
   background-size: cover;
 }
@@ -1035,7 +1034,7 @@ html .interiors .card-9 .card-9-img-2,
 body .interiors .card-9 .card-9-img-2 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/BERUTI/beruti2.jpeg);
+  background-image: url(../assets2/INTERIORS/BERUTI/beruti2.webp);
   background-position: center;
   background-size: cover;
 }
@@ -1115,7 +1114,7 @@ html .interiors .card-10 .card-10-img-1,
 body .interiors .card-10 .card-10-img-1 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/RIVADAVIAvivienda/rivadavia1.jpeg);
+  background-image: url(../assets2/INTERIORS/RIVADAVIAvivienda/rivadavia1.webp);
   background-position: center;
   background-size: cover;
 }
@@ -1123,7 +1122,7 @@ html .interiors .card-10 .card-10-img-2,
 body .interiors .card-10 .card-10-img-2 {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/INTERIORS/RIVADAVIAvivienda/rivadavia3.jpeg);
+  background-image: url(../assets2/INTERIORS/RIVADAVIAvivienda/rivadavia3.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1237,7 +1236,7 @@ html .interiors .process .process-cards .process-card .img,
 body .interiors .process .process-cards .process-card .img {
   width: 100%;
   height: 60%;
-  background-image: url(../assets2/INTERIORS/MARITTIMA/566.png);
+  background-image: url(../assets2/INTERIORS/MARITTIMA/566.webp);
   background-position: center;
   background-size: cover;
 }
@@ -1246,7 +1245,7 @@ body .interiors .process .process-cards .process-card .img-2 {
   width: 100%;
   height: 60%;
   background-color: rgb(203, 204, 204);
-  background-image: url(../assets2/INTERIORS/FRAGA/yhhh.png);
+  background-image: url(../assets2/INTERIORS/FRAGA/yhhh.webp);
   background-position: center;
   background-size: cover;
 }
@@ -1332,7 +1331,7 @@ body .set-desing .set-1 .set-1-img-1 {
   width: 325px;
   height: 280px;
   border: 1px solid rgb(201, 201, 201);
-  background-image: url(../assets2/SET/PLAYLIST/dillon1.png);
+  background-image: url(../assets2/SET/PLAYLIST/dillon1.webp);
   background-position: center;
   background-size: cover;
 }
@@ -1348,7 +1347,7 @@ body .set-desing .set-1 .set-1-img-2 {
   width: 325px;
   height: 280px;
   border: 1px solid rgb(201, 201, 201);
-  background-image: url(../assets2/SET/PLAYLIST/dillon2.png);
+  background-image: url(../assets2/SET/PLAYLIST/dillon2.webp);
   background-position: center;
   background-size: cover;
 }
@@ -1363,7 +1362,7 @@ html .set-desing .set-1 .set-1-carrousel,
 body .set-desing .set-1 .set-1-carrousel {
   width: 325px;
   height: 280px;
-  background-image: url(../assets2/SET/STAND/stand.png);
+  background-image: url(../assets2/SET/STAND/stand.webp);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -1447,7 +1446,7 @@ body .styling .style-1 .style-1-img-1 {
   width: 325px;
   height: 280px;
   border: 1px solid rgb(201, 201, 201);
-  background-image: url(../assets2/STYLING/FELPA/felpa.png);
+  background-image: url(../assets2/STYLING/FELPA/felpa.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
